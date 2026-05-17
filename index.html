@@ -3,9 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>LUXE - Homepage</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-[#F9F8F6] text-[#1A1A1A] antialiased">
+
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="text-2xl font-bold tracking-widest text-black cursor-pointer">
+                LUXE
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-gray-600">
+                <a href="#" class="text-black border-b-2 border-black pb-1">New Arrivals</a>
+                <a href="#" class="hover:text-black transition-colors">Men</a>
+                <a href="#" class="hover:text-black transition-colors">Women</a>
+                <a href="#" class="hover:text-black transition-colors">Accessories</a>
+            </nav>
+
+            <div class="flex items-center space-x-5 text-gray-700">
+                <button class="hover:text-black transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                </button>
+                <button class="hover:text-black transition-colors relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                </button>
+                <button class="hover:text-black transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-[75vh] md:h-[85vh] bg-[#0A231C] overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center mix-blend-normal opacity-90" style="background-image: url('https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=1200&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/20"></div>
+        </div>
+
+        <div class="absolute inset-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-start z-10 text-white">
+            <span class="text-xs uppercase tracking-widest font-medium mb-3 text-gray-300">Summer Collection 2024</span>
+            <h1 class="text-4xl md:text-6xl font-medium tracking-tight max-w-2xl leading-tight mb-8">
+                Quiet Luxury For<br>The Modern Mind
+            </h1>
+            <div class="flex flex-wrap gap-4">
+                <a href="#" class="bg-[#051C16] hover:bg-[#0f2e26] text-white text-xs uppercase tracking-widest font-medium py-3.5 px-8 transition-colors duration-300">
+                    Shop Now
+                </a>
+                <a href="#" class="border border-white/60 hover:border-white text-white text-xs uppercase tracking-widest font-medium py-3.5 px-8 transition-colors duration-300 backdrop-blur-sm">
+                    View Lookbook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-24">
+        <div class="mb-10 text-center md:text-left">
+            <h2 class="text-2xl font-semibold tracking-tight text-gray-900 mb-1">Shop by Collection</h2>
+            <p class="text-sm text-gray-500">Explore meticulously crafted items by category.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="#" class="group relative aspect-[4/5] bg-gray-200 overflow-hidden block">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=600&auto=format&fit=crop" alt="Women's Collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300"></div>
+                <div class="absolute bottom-6 left-6 text-white">
+                    <h3 class="text-lg font-medium tracking-wide uppercase">Women</h3>
+                    <span class="text-xs border-b border-white pb-0.5 mt-1 inline-block opacity-90 group-hover:opacity-100">Explore Collection</span>
+                </div>
+            </a>
+
+            <a href="#" class="group relative aspect-[4/5] bg-gray-200 overflow-hidden block">
+                <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=600&auto=format&fit=crop" alt="Men's Collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300"></div>
+                <div class="absolute bottom-6 left-6 text-white">
+                    <h3 class="text-lg font-medium tracking-wide uppercase">Men</h3>
+                    <span class="text-xs border-b border-white pb-0.5 mt-1 inline-block opacity-90 group-hover:opacity-100">Explore Collection</span>
+                </div>
+            </a>
+
+            <a href="#" class="group relative aspect-[4/5] bg-gray-200 overflow-hidden block">
+                <img src="https://images.unsplash.com/photo-1600857062241-98e5dba7f214?q=80&w=600&auto=format&fit=crop" alt="Accessories Collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300"></div>
+                <div class="absolute bottom-6 left-6 text-white">
+                    <h3 class="text-lg font-medium tracking-wide uppercase">Accessories</h3>
+                    <span class="text-xs border-b border-white pb-0.5 mt-1 inline-block opacity-90 group-hover:opacity-100">Explore Collection</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <h2 class="text-2xl font-semibold tracking-tight text-gray-900 mb-1">The Curated Edit</h2>
+                <p class="text-sm text-gray-500">Essential pieces for a timeless wardrobe.</p>
+            </div>
+            <a href="#" class="text-sm font-medium text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors">
+                Shop All
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6">
+            
+            <div class="flex flex-col">
+                <div class="relative bg-[#EAEAEA] aspect-[3/4] overflow-hidden mb-4">
+                    <span class="absolute top-3 left-3 bg-white text-[10px] uppercase font-semibold tracking-wider px-2 py-1 z-10 shadow-sm">
+                        NEW ARRIVAL
+                    </span>
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=600&auto=format&fit=crop" alt="Veridian Tote" class="w-full h-full object-cover">
+                </div>
+                <div class="flex justify-between items-start gap-2">
+                    <div>
+                        <h3 class="text-base font-medium text-gray-900 mb-0.5">Veridian Tote</h3>
+                        <p class="text-sm text-gray-600 font-medium">$850.00</p>
+                    </div>
+                    <button class="bg-[#1A1A1A] hover:bg-black text-white text-[10px] uppercase tracking-widest font-medium py-2 px-3 transition-colors shrink-0">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="relative bg-[#EAEAEA] aspect-[3/4] overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?q=80&w=600&auto=format&fit=crop" alt="Silk Loafers" class="w-full h-full object-cover">
+                </div>
+                <div class="flex justify-between items-start gap-2">
+                    <div>
+                        <h3 class="text-base font-medium text-gray-900 mb-0.5">Silk Loafers</h3>
+                        <p class="text-sm text-gray-600 font-medium">$420.00</p>
+                    </div>
+                    <button class="bg-[#1A1A1A] hover:bg-black text-white text-[10px] uppercase tracking-widest font-medium py-2 px-3 transition-colors shrink-0">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="relative bg-[#EAEAEA] aspect-[3/4] overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=600&auto=format&fit=crop" alt="Cashmere Blazer" class="w-full h-full object-cover">
+                </div>
+                <div class="flex justify-between items-start gap-2">
+                    <div>
+                        <h3 class="text-base font-medium text-gray-900 mb-0.5">Cashmere Blazer</h3>
+                        <p class="text-sm text-gray-600 font-medium">$1,200.00</p>
+                    </div>
+                    <button class="bg-[#1A1A1A] hover:bg-black text-white text-[10px] uppercase tracking-widest font-medium py-2 px-3 transition-colors shrink-0">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="relative bg-[#EAEAEA] aspect-[3/4] overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=600&auto=format&fit=crop" alt="The Origin Watch" class="w-full h-full object-cover">
+                </div>
+                <div class="flex justify-between items-start gap-2">
+                    <div>
+                        <h3 class="text-base font-medium text-gray-900 mb-0.5">The Origin Watch</h3>
+                        <p class="text-sm text-gray-600 font-medium">$3,500.00</p>
+                    </div>
+                    <button class="bg-[#1A1A1A] hover:bg-black text-white text-[10px] uppercase tracking-widest font-medium py-2 px-3 transition-colors shrink-0">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-200 pt-16 pb-8 text-sm text-gray-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-8 mb-16">
+                <div class="flex flex-col space-y-4">
+                    <span class="text-xl font-bold tracking-widest text-black">LUXE</span>
+                    <p class="text-gray-500 leading-relaxed max-w-xs">
+                        Elevated wardrobe essentials designed with modern understatement and exceptional craftsmanship.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-black uppercase tracking-wider text-xs mb-4">Shop</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="#" class="hover:text-black transition-colors">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-black transition-colors">Men's Collection</a></li>
+                        <li><a href="#" class="hover:text-black transition-colors">Women's Collection</a></li>
+                        <li><a href="#" class="hover:text-black transition-colors">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-black uppercase tracking-wider text-xs mb-4">Assistance</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="#" class="hover:text-black transition-colors">Customer Service</a></li>
+                        <li><a href="#" class="hover:text-black transition-colors">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-black transition-colors">Size Guide</a></li>
+                        <li><a href="#" class="hover:text-black transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-black uppercase tracking-wider text-xs mb-4">Newsletter</h4>
+                    <p class="text-gray-500 mb-4 leading-relaxed">Subscribe to receive updates on collections and exclusive access.</p>
+                    <form class="flex border-b border-black py-1">
+                        <input type="email" placeholder="Your email address" class="bg-transparent border-none w-full text-sm focus:outline-none placeholder-gray-400 py-1 text-black">
+                        <button type="submit" class="text-xs uppercase tracking-wider font-semibold hover:opacity-70 transition-opacity pl-2">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-100 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-400 gap-4">
+                <p>&copy; 2026 LUXE Inc. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-gray-600 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-600 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
