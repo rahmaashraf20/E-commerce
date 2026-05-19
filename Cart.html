@@ -10,10 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <style>
     body {
@@ -24,352 +21,142 @@
 
 <body class="bg-[#F9F8F6] text-[#1A1A1A] antialiased">
 
-
-
-    
-
-  <!-- =========================
-       NAVBAR
-  ========================== -->
-
+  <!-- NAVBAR -->
   <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
-
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-
-      <a href="index.html"
-         class="text-2xl font-bold tracking-widest text-black cursor-pointer">
-
+      <a href="index.html" class="text-2xl font-bold tracking-widest text-black cursor-pointer">
         LUXE
-
       </a>
 
       <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-gray-600">
-
-        <a href="#" class="text-black border-b-2 border-black pb-1">
-          New Arrivals
-        </a>
-
-        <a href="#" class="hover:text-black transition-colors">
-          Men
-        </a>
-
-        <a href="#" class="hover:text-black transition-colors">
-          Women
-        </a>
-
-        <a href="#" class="hover:text-black transition-colors">
-          Accessories
-        </a>
-
+        <a href="#" class="text-black border-b-2 border-black pb-1">New Arrivals</a>
+        <a href="#" class="hover:text-black transition-colors">Men</a>
+        <a href="#" class="hover:text-black transition-colors">Women</a>
+        <a href="#" class="hover:text-black transition-colors">Accessories</a>
       </nav>
 
       <div class="flex items-center space-x-5 text-gray-700">
-
         <!-- CART -->
-        <a href="cart.html"
-           class="hover:text-black transition-colors relative">
-
-          <svg xmlns="http://www.w3.org/2000/svg"
-               fill="none"
-               viewBox="0 0 24 24"
-               stroke-width="1.5"
-               stroke="currentColor"
-               class="w-5 h-5">
-
-            <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
-
+        <a href="cart.html" class="hover:text-black transition-colors relative">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
           </svg>
-
           <!-- COUNT -->
-          <span id="cartCount"
-                class="absolute -top-2 -right-2 bg-black text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
-
+          <span id="cartCount" class="absolute -top-2 -right-2 bg-black text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
             0
-
           </span>
-
         </a>
-
       </div>
-
     </div>
-
   </header>
 
-
-
-
-  <!-- =========================
-       CART SECTION
-  ========================== -->
-
+  <!-- CART SECTION -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-
     <!-- TITLE -->
     <div class="mb-12">
-
-      <h1 class="text-4xl md:text-5xl font-semibold tracking-tight mb-3">
-
-        Shopping Cart
-
-      </h1>
-
-      <p class="text-gray-500">
-
-        Review your selection before checkout.
-
-      </p>
-
+      <h1 class="text-4xl md:text-5xl font-semibold tracking-tight mb-3">Shopping Cart</h1>
+      <p class="text-gray-500">Review your selection before checkout.</p>
     </div>
 
     <!-- GRID -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-
       <!-- LEFT -->
       <div class="lg:col-span-2">
-
         <!-- HEADERS -->
         <div class="hidden md:grid grid-cols-4 text-xs uppercase tracking-widest text-gray-500 border-b border-gray-200 pb-4 mb-8">
-
           <span>Product</span>
-
-          <span class="text-center">
-            Quantity
-          </span>
-
-          <span class="text-center">
-            Price
-          </span>
-
-          <span class="text-right">
-            Total
-          </span>
-
+          <span class="text-center">Quantity</span>
+          <span class="text-center">Price</span>
+          <span class="text-right">Total</span>
         </div>
 
         <!-- ITEMS -->
         <div id="cartItems" class="space-y-6"></div>
-
-        <!-- CONTINUE -->
-        <a href="index.html"
-           class="inline-flex items-center gap-2 mt-10 text-sm hover:opacity-70 transition">
-
-          ← Continue Shopping
-
-        </a>
-
+        
       </div>
 
       <!-- RIGHT -->
       <div class="bg-white rounded-3xl p-8 md:p-10 shadow-sm h-fit sticky top-24">
-
-        <h2 class="text-3xl font-semibold mb-10">
-
-          Order Summary
-
-        </h2>
+        <h2 class="text-3xl font-semibold mb-10">Order Summary</h2>
 
         <!-- SUMMARY -->
         <div class="space-y-5 text-sm text-gray-700">
-
           <div class="flex justify-between">
-
             <span>Subtotal</span>
-
             <span id="subtotal">$0</span>
-
           </div>
-
           <div class="flex justify-between gap-4">
-
             <span>Shipping</span>
-
-            <span class="text-right">
-              Calculated at checkout
-            </span>
-
+            <span class="text-right">Calculated at checkout</span>
           </div>
-
           <div class="flex justify-between">
-
             <span>Estimated Tax</span>
-
             <span id="tax">$0</span>
-
           </div>
-
         </div>
 
         <hr class="my-8 border-gray-200">
 
         <!-- TOTAL -->
         <div class="flex justify-between items-center mb-8">
-
-          <span class="text-2xl font-semibold">
-            Total
-          </span>
-
-          <span id="total"
-                class="text-4xl font-bold text-[#062b1f]">
-
-            $0
-
-          </span>
-
+          <span class="text-2xl font-semibold">Total</span>
+          <span id="total" class="text-4xl font-bold text-[#062b1f]">$0</span>
         </div>
 
         <!-- CHECKOUT -->
-        <a href="checkout.html"
-           class="w-full bg-[#062b1f] hover:bg-black text-white py-4 rounded-md tracking-[0.2em] uppercase text-xs font-medium flex items-center justify-center transition-colors">
-
+        <a href="checkout.html" class="w-full bg-[#062b1f] hover:bg-black text-white py-4 rounded-md tracking-[0.2em] uppercase text-xs font-medium flex items-center justify-center transition-colors">
           Proceed To Checkout
-
         </a>
-
-        <p class="text-xs text-gray-500 text-center mt-5">
-
-          Complimentary shipping on orders over $1,500.
-
-        </p>
-
+        <p class="text-xs text-gray-500 text-center mt-5">Complimentary shipping on orders over $1,500.</p>
       </div>
-
     </div>
-
   </section>
 
-
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
+  <!-- FOOTER -->
   <footer class="bg-white border-t border-gray-200 pt-16 pb-8 text-sm text-gray-600">
-
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
       <div class="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-8 mb-16">
-
         <div class="flex flex-col space-y-4">
-
-          <span class="text-xl font-bold tracking-widest text-black">
-
-            LUXE
-
-          </span>
-
-          <p class="text-gray-500 leading-relaxed max-w-xs">
-
-            Elevated wardrobe essentials designed with modern understatement and exceptional craftsmanship.
-
-          </p>
-
+          <span class="text-xl font-bold tracking-widest text-black">LUXE</span>
+          <p class="text-gray-500 leading-relaxed max-w-xs">Elevated wardrobe essentials designed with modern understatement and exceptional craftsmanship.</p>
         </div>
-
         <div>
-
-          <h4 class="font-semibold text-black uppercase tracking-wider text-xs mb-4">
-
-            Shop
-
-          </h4>
-
+          <h4 class="font-semibold text-black uppercase tracking-wider text-xs mb-4">Shop</h4>
           <ul class="space-y-2.5">
-
             <li><a href="#" class="hover:text-black transition-colors">New Arrivals</a></li>
-
             <li><a href="#" class="hover:text-black transition-colors">Men's Collection</a></li>
-
             <li><a href="#" class="hover:text-black transition-colors">Women's Collection</a></li>
-
             <li><a href="#" class="hover:text-black transition-colors">Accessories</a></li>
-
           </ul>
-
         </div>
-
         <div>
-
-          <h4 class="font-semibold text-black uppercase tracking-wider text-xs mb-4">
-
-            Assistance
-
-          </h4>
-
+          <h4 class="font-semibold text-black uppercase tracking-wider text-xs mb-4">Assistance</h4>
           <ul class="space-y-2.5">
-
             <li><a href="#" class="hover:text-black transition-colors">Customer Service</a></li>
-
             <li><a href="#" class="hover:text-black transition-colors">Shipping & Returns</a></li>
-
             <li><a href="#" class="hover:text-black transition-colors">Size Guide</a></li>
-
             <li><a href="#" class="hover:text-black transition-colors">Contact Us</a></li>
-
           </ul>
-
         </div>
-
         <div>
-
-          <h4 class="font-semibold text-black uppercase tracking-wider text-xs mb-4">
-
-            Newsletter
-
-          </h4>
-
-          <p class="text-gray-500 mb-4 leading-relaxed">
-
-            Subscribe to receive updates on collections and exclusive access.
-
-          </p>
-
+          <h4 class="font-semibold text-black uppercase tracking-wider text-xs mb-4">Newsletter</h4>
+          <p class="text-gray-500 mb-4 leading-relaxed">Subscribe to receive updates on collections and exclusive access.</p>
           <form class="flex border-b border-black py-1">
-
-            <input type="email"
-                   placeholder="Your email address"
-                   class="bg-transparent border-none w-full text-sm focus:outline-none placeholder-gray-400 py-1 text-black">
-
-            <button type="submit"
-                    class="text-xs uppercase tracking-wider font-semibold hover:opacity-70 transition-opacity pl-2">
-
-              Join
-
-            </button>
-
+            <input type="email" placeholder="Your email address" class="bg-transparent border-none w-full text-sm focus:outline-none placeholder-gray-400 py-1 text-black">
+            <button type="submit" class="text-xs uppercase tracking-wider font-semibold hover:opacity-70 transition-opacity pl-2">Join</button>
           </form>
-
         </div>
-
       </div>
-
       <div class="border-t border-gray-100 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-400 gap-4">
-
-        <p>
-          &copy; 2026 LUXE Inc. All rights reserved.
-        </p>
-
+        <p>&copy; 2026 LUXE Inc. All rights reserved.</p>
         <div class="flex space-x-6">
-
-          <a href="#" class="hover:text-gray-600 transition-colors">
-            Privacy Policy
-          </a>
-
-          <a href="#" class="hover:text-gray-600 transition-colors">
-            Terms of Service
-          </a>
-
+          <a href="#" class="hover:text-gray-600 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-gray-600 transition-colors">Terms of Service</a>
         </div>
-
       </div>
-
     </div>
-
   </footer>
 
-
+ <script src="Cart.js"></script>
 </body>
 </html>
