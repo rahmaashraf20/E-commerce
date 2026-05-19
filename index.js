@@ -34,3 +34,4 @@
             alert(`${name} has been added to your cart!`);
         }
         updateCartCount();
+        
